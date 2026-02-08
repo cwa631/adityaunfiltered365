@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="hi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Linktree - (ᗩ𝐚𝐝𝐢❣️)</title>
+    <!----Favicon---->
+    <link rel="icon" type="image/png" href="./assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+
+    <style>
+        :root {
+            --bg: #0c0f16;
+            --card: #10131c;
+            --muted: #9aa6b2;
+            --radius: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            background: linear-gradient(180deg, #0a0e17, #090f1d 50%, #080d18);
+            font-family: "Poppins", sans-serif;
+            color: #eef2f6;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Main Box */
+        .wrapper {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 28px;
+            border-radius: 22px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Profile header */
+        .profile {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: auto;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 22px rgba(255, 255, 255, 0.05);
+            position: relative;
+            animation: float 4s ease-in-out infinite;
+            transition: transform .3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.07) rotate(2deg);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-10px)
+            }
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 12px;
+        }
+
+        .bio {
+            font-size: 14px;
+            margin-top: 5px;
+            color: var(--muted);
+        }
+
+        /* Link buttons */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .link {
+            background: #121722;
+            padding: 16px;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: .25s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .icon.mail {
+            background: linear-gradient(135deg, #EA4335, #FBBC05);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+
+        /* New Glow + Lift Hover */
+        .link:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 0 18px rgba(255, 255, 255, 0.12), 0 10px 30px rgba(0, 0, 0, 0.6);
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+        }
+
+        /* Icon bubble */
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            flex-shrink: 0;
+            transition: .25s ease;
+        }
+
+        .link:hover .icon {
+            transform: rotate(8deg) scale(1.12);
+            box-shadow: 0 0 14px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Labels */
+        .text .title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .text .sub {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 3px;
+        }
+
+        /* Full-color Icon Styles */
+        .fb {
+            background: #1877f2;
+        }
+
+        .ig {
+            background: radial-gradient(circle at 30% 30%, #feda75, #fa7e1e 30%, #d62976 60%, #962fbf 85%, #4f5bd5);
+        }
+
+        .yt {
+            background: #f5f2f2;
+        }
+
+        .li {
+            background: #0a66c2;
+        }
+
+        .sc {
+            background: #fffc00;
+        }
+
+        .site {
+            background: #13d4a5;
+        }
+
+        .coffee {
+            background: #ffb86b;
+        }
+
+        /* SVG icons white */
+        .icon svg {
+            fill: #fff;
+        }
+
+        /* bottom note */
+        .footer {
+            margin-top: 18px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Profile -->
+        <div class="profile">
+            <div class="avatar">
+                <img src="./assets/ChatGPT Image Jan 28, 2026, 09_12_25 AM.png">
+            </div>
+            <div class="name">ᴀᴅɪᴛʏᴀ ᴋᴜᴍᴀʀ ꜱɪɴɢʜ </div>
+            <div class="bio">Digital Creator 🎬 creating content that informs, inspires, and connects, building a strong
+                community through creativity and consistency. 📩 Contact via social media only.</div>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+
+            <!-- Facebook -->
+            <a class="link" href="https://www.facebook.com/share/15YUuCkp69E/">
+                <div class="icon fb">
+                    <svg width="22" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12.07C22 6.48 17.52 2 11.93 2 6.34 2 2 6.48 2 12.07c0 5 3.66 9.13 8.44 9.89v-7h-2.4v-3h2.4V9.8c0-2.4 1.43-3.7 3.62-3.7.99 0 2.03.2 2.03.2v2.3h-1.14c-1.13 0-1.49.7-1.49 1.42v1.7h2.52l-.4 3h-2.1v7C18.34 21.2 22 17.07 22 12.07z" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <div class="title">Facebook</div>
+                    <div class="sub">Follow me on Facebook Page</div>
+                </div>
+            </a>
+
+            <!-- Instagram -->
+            <a class="link" href="https://www.instagram.com/adityaunfiltered365">
+                <div class="icon ig">
+                    <svg width="20" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#fff" stroke-width="2"
+                            d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" />
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2" />
+                        <circle cx="17" cy="7" r="1.3" fill="#fff" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <div class="title">Instagram</div>
+                    <div class="sub">Connect with me on Instagram</div>
+                </div>
+            </a>
+
+            <!-- Snapchat -->
+            <a class="link" href="https://www.snapchat.com/add/beingaditya365">
+
+                <div class="icon sc" style="font-size:22px;">
+                    👻
+                </div>
+
+                <div class="text">
+                    <div class="title">Snapchat</div>
+                    <div class="sub">Add me on Snapchat</div>
+                </div>
+
+            </a>
+
+
+
+            <!-- LinkedIn -->
+            <a class="link" href="#">
+
+                <div class="icon linkedin">
+                    <svg width="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="3" fill="#0A66C2" />
+                        <rect x="5" y="10" width="3" height="9" fill="#ffffff" />
+                        <circle cx="6.5" cy="7" r="1.5" fill="#ffffff" />
+                        <path
+                            d="M13 13c0-1.5 1-2.5 2.5-2.5S18 11.5 18 13v6h-3v-5c0-.8-.4-1.2-1-1.2s-1 .4-1 1.2v5h-3v-9h3v1z"
+                            fill="#ffffff" />
+                    </svg>
+                </div>
+
+                <div class="text">
+                    <div class="title">LinkedIn</div>
+                    <div class="sub">Connect with me</div>
+                </div>
+
+            </a>
+
+
+            <!-- YouTube -->
+            <a class="link" href="https://youtube.com/@adityaunfiltered365">
+
+                <div class="icon yt">
+                    <svg width="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="5" width="20" height="14" rx="4" fill="#FF0000" />
+                        <polygon points="10,9 10,15 16,12" fill="#FFFFFF" />
+                    </svg>
+                </div>
+
+                <div class="text">
+                    <div class="title">YouTube</div>
+                    <div class="sub">Subscribe my channel</div>
+                </div>
+
+            </a>
+
+
+            <!-- Email -->
+            <a class="link" href="mailto:kumaraditya421173@gmail.com?subject=Website Contact&body=Hello Aditya,">
+                <div class="icon mail">
+                    <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div class="text">
+                    <div class="title">Email Me</div>
+                    <div class="sub">kumaraditya421173@gmail.com</div>
+                </div>
+            </a>
+
+
+            <!-- Personal Website -->
+            <a class="link" href="https://cwa631.github.io/website/">
+                <div class="icon site">
+                    <svg width="22" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" fill="none" stroke="#fff" stroke-width="2" />
+                        <path d="M2 12h20M12 3c3 4 3 14 0 18" stroke="#fff" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <div class="title">My Website</div>
+                    <div class="sub">www.cwa631.com</div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="footer">
+            © <span id="year"></span> 𝐚𝐝𝐢𝐭𝐲𝐚𝐮𝐧𝐟𝐢𝐥𝐭𝐞𝐫𝐞𝐝𝟑𝟔𝟓❣️. 𝗔𝗹𝗹 𝗥𝗶𝗴𝗵𝘁𝘀 𝗥𝗲𝘀𝗲𝗿𝘃𝗲𝗱.
+        </div>
+
+    </div>
+</body>
+
+</html>
